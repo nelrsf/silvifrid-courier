@@ -50,5 +50,4 @@ export class ProductQuantityService {
     let courierURL = `${process.env.COURIER_API_URL}/${originCity}/${cityId}/${side}/${side}/${side}/${weight}/${insuredCost}/2/es`;
     return courierURL;
   }
-
 }
