@@ -1,5 +1,4 @@
 import { Controller, Get, NotFoundException, Res } from '@nestjs/common';
-import { ok } from 'assert';
 import { CityService } from './city.service';
 
 
@@ -7,7 +6,7 @@ import { CityService } from './city.service';
 export class CityController {
   constructor(private readonly cityService: CityService) {}
 
-  @Get()
+  @Get('/getcities')
   async findAll(@Res() res) {
     let result = await this.cityService.findAll();
     result.subscribe(
