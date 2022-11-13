@@ -12,7 +12,8 @@
             "dest": "src/main.ts",
             "methods":[
                 "POST",
-                "GET"
+                "GET",
+                "OPTIONS"
             ]
         }
     ]
